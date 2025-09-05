@@ -156,7 +156,7 @@ export default function Index() {
                 &copy; 2025 Haryana Advertiser. All rights reserved.
               </p>
               <p className="text-gray-400 text-center md:text-right">
-                Designed with <span className="text-red-400">❤️</span> for quality printing solutions
+                Designed &amp; Developed by{" "} <span className="text-blue-400 font-semibold">EthicsComputer</span>
               </p>
             </div>
           </div>
