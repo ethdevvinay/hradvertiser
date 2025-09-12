@@ -10,15 +10,12 @@ import {
   Award,
   Sparkles,
   Zap,
-  Heart,
   Star,
-  Gift,
   Palette,
   Camera,
   BookOpen,
   Shirt,
   CupSoda,
-  Trophy,
   BriefcaseBusiness,
   Truck,
   RectangleHorizontal, 
@@ -28,7 +25,6 @@ import {
   PenTool,
   Sticker
 } from 'lucide-react';
-
 
 const Services = () => {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
@@ -77,7 +73,7 @@ const Services = () => {
     {
       title: "Custom Stickers",
       description: "Vibrant stickers and labels for branding, decoration, and packaging",
-      icon: Star,
+      icon: Sticker,
       gradient: "from-yellow-500 via-orange-500 to-red-500",
       bgGradient: "from-yellow-50 to-orange-50",
       features: ["Waterproof", "Die Cut", "Custom Shapes"]
@@ -85,7 +81,7 @@ const Services = () => {
     {
       title: "Logo Design",
       description: "Professional logo design and branding services for your business",
-      icon: Palette,
+      icon: PenTool,
       gradient: "from-violet-500 via-purple-500 to-indigo-500",
       bgGradient: "from-violet-50 to-purple-50",
       features: ["Multiple Concepts", "Unlimited Revisions", "Vector Files"]
@@ -101,7 +97,7 @@ const Services = () => {
     {
       title: "Catalogs & Magazines",
       description: "Professional catalogs, magazines, and booklets for your business",
-      icon: Book,
+      icon: BookOpen,
       gradient: "from-emerald-500 via-green-500 to-lime-500",
       bgGradient: "from-emerald-50 to-green-50",
       features: ["Perfect Binding", "Glossy Finish", "Bulk Printing"]
@@ -117,7 +113,7 @@ const Services = () => {
     {
       title: "Mugs & Gifts",
       description: "Personalized mugs, keychains, and promotional gifts for any occasion",
-      icon: Coffee,
+      icon: CupSoda,
       gradient: "from-red-500 via-pink-500 to-rose-500",
       bgGradient: "from-red-50 to-pink-50",
       features: ["Sublimation Print", "Laser Engraving", "Custom Design"]
@@ -125,7 +121,7 @@ const Services = () => {
     {
       title: "Certificates",
       description: "Professional certificates, awards, and recognition materials",
-      icon: Trophy,
+      icon: Award,
       gradient: "from-blue-600 via-indigo-500 to-purple-500",
       bgGradient: "from-blue-50 to-indigo-50",
       features: ["Gold Foiling", "Embossing", "Premium Frame"]
@@ -133,7 +129,7 @@ const Services = () => {
     {
       title: "Corporate Identity",
       description: "Complete corporate branding packages including letterheads and envelopes",
-      icon: Briefcase,
+      icon: BriefcaseBusiness,
       gradient: "from-gray-600 via-slate-500 to-zinc-500",
       bgGradient: "from-gray-50 to-slate-50",
       features: ["Complete Package", "Brand Guidelines", "Stationery Set"]
@@ -141,7 +137,7 @@ const Services = () => {
     {
       title: "Vehicle Graphics",
       description: "Eye-catching vehicle wraps, decals, and advertising graphics",
-      icon: MapPin,
+      icon: Truck,
       gradient: "from-orange-600 via-red-500 to-pink-500",
       bgGradient: "from-orange-50 to-red-50",
       features: ["Full Wrap", "Partial Graphics", "Reflective Material"]
@@ -149,7 +145,7 @@ const Services = () => {
     {
       title: "Signage Board",
       description: "High-quality signage boards for shops, offices, and events",
-      icon: PanelsTopLeft, // signage board / panels icon
+      icon: RectangleHorizontal,
       gradient: "from-red-500 via-orange-500 to-yellow-500",
       bgGradient: "from-red-50 to-orange-50",
       features: ["Weatherproof", "Custom Sizes", "Durable Material"]
@@ -157,7 +153,7 @@ const Services = () => {
     {
       title: "Acrylics & LED Letters",
       description: "Premium acrylic and LED glow letters for your brand visibility",
-      icon: Type, // letter / typography icon
+      icon: Type,
       gradient: "from-purple-500 via-pink-500 to-red-500",
       bgGradient: "from-purple-50 to-pink-50",
       features: ["3D Acrylic", "LED Backlit", "Custom Fonts"]
@@ -165,7 +161,7 @@ const Services = () => {
     {
       title: "Glow Shine Board",
       description: "Attractive glow boards to make your business stand out day & night",
-      icon: Lightbulb, // glowing light effect
+      icon: Lightbulb,
       gradient: "from-yellow-400 via-orange-500 to-red-500",
       bgGradient: "from-yellow-50 to-orange-50",
       features: ["Energy Efficient", "Bright LED Lights", "Long-lasting"]
@@ -173,7 +169,7 @@ const Services = () => {
     {
       title: "Canvas & Retro",
       description: "Stylish canvas prints and retro-themed boards for decor and branding",
-      icon: PictureInPicture, // canvas/photo frame style
+      icon: PictureInPicture2,
       gradient: "from-teal-500 via-green-500 to-emerald-500",
       bgGradient: "from-teal-50 to-green-50",
       features: ["High Resolution", "Retro Themes", "Custom Designs"]
@@ -247,10 +243,6 @@ const Services = () => {
                   <CardTitle className="text-lg font-bold text-gray-900 group-hover:text-gray-800 transition-colors leading-tight">
                     {service.title}
                   </CardTitle>
-                  
-                  <div className={`text-sm font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}>
-                    {service.price}
-                  </div>
                 </CardHeader>
 
                 <CardContent className="relative z-10 pt-0">
