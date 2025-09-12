@@ -137,7 +137,7 @@ const Gallery = () => {
           <button 
             onClick={() => {
               const message = "Hi! I saw your portfolio and I'm impressed. I'd like to discuss a printing project with you.";
-              const whatsappUrl = `https://wa.me/919896615867?text=${encodeURIComponent(message)}`;
+              const whatsappUrl = `https://wa.me/919802919872?text=${encodeURIComponent(message)}`;
               window.open(whatsappUrl, '_blank');
             }}
             className="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
