@@ -178,7 +178,7 @@ const Services = () => {
 
   const handleBookService = (serviceName: string) => {
     const message = `Hi! I'm interested in ${serviceName}. Please provide me with detailed information about pricing, customization options, and delivery time.`;
-    const whatsappUrl = `https://wa.me/91?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/919802919872?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -297,7 +297,7 @@ const Services = () => {
             <Button 
               onClick={() => {
                 const message = "Hi! I need a custom printing solution. Please help me create something unique for my requirements.";
-                const whatsappUrl = `https://wa.me/91?text=${encodeURIComponent(message)}`;
+                const whatsappUrl = `https://wa.me/919802919872?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
               }}
               className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
