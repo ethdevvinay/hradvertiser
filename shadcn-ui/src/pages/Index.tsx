@@ -256,7 +256,10 @@ export default function Index() {
                     <p className="text-gray-300 text-lg">
                       <span className="text-xl mr-2">🎨</span>
                       Designed & Developed by{" "}
-                      <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent font-bold text-xl hover:animate-pulse cursor-pointer">
+                      <span 
+                        className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent font-bold text-xl hover:animate-pulse cursor-pointer"
+                        onClick={() => window.open('https://ethicscomputer.in', '_blank')}
+                      >
                         EthicsComputer
                       </span>
                       <span className="text-xl ml-2">✨</span>
