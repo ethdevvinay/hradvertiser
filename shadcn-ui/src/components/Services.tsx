@@ -15,17 +15,20 @@ import {
   Gift,
   Palette,
   Camera,
-  Book,
+  BookOpen,
   Shirt,
-  Coffee,
+  CupSoda,
   Trophy,
-  Briefcase,
-  MapPin,
-  PanelsTopLeft, 
+  BriefcaseBusiness,
+  Truck,
+  RectangleHorizontal, 
   Type, 
   Lightbulb, 
-  PictureInPicture 
+  PictureInPicture2, 
+  PenTool,
+  Sticker
 } from 'lucide-react';
+
 
 const Services = () => {
   const [hoveredService, setHoveredService] = useState<number | null>(null);
