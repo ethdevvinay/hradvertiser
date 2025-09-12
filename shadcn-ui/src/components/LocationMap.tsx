@@ -174,29 +174,6 @@ const LocationMap = () => {
                 </div>
               </div>
 
-              {/* Coordinates */}
-              <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-100 to-purple-200 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Navigation className="w-6 h-6 text-purple-600" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Coordinates</h4>
-                  <div className="bg-gray-50 rounded-lg p-3 font-mono text-sm">
-                    <p className="text-gray-700">Lat: <span className="font-semibold text-blue-600">{location.coordinates.lat}</span></p>
-                    <p className="text-gray-700">Lng: <span className="font-semibold text-blue-600">{location.coordinates.lng}</span></p>
-                  </div>
-                  <button 
-                    onClick={() => {
-                      navigator.clipboard.writeText(`${location.coordinates.lat}, ${location.coordinates.lng}`);
-                      alert('Coordinates copied to clipboard!');
-                    }}
-                    className="mt-2 text-purple-600 hover:text-purple-700 text-sm font-medium hover:underline"
-                  >
-                    Copy Coordinates
-                  </button>
-                </div>
-              </div>
-
               {/* Phone */}
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-green-100 to-green-200 rounded-xl flex items-center justify-center flex-shrink-0">
