@@ -6,7 +6,6 @@ import Services from '@/components/Services';
 import HowItWorks from '@/components/HowItWorks';
 import Gallery from '@/components/Gallery';
 import Testimonials from '@/components/Testimonials';
-import StatsSection from '@/components/StatsSection';
 import LocationMap from '@/components/LocationMap';
 import CTABanner from '@/components/CTABanner';
 import Contact from '@/components/Contact';
@@ -24,7 +23,6 @@ export default function Index() {
       <HowItWorks />
       <Gallery />
       <Testimonials />
-      <StatsSection />
       <LocationMap />
       <CTABanner />
       <Contact />
