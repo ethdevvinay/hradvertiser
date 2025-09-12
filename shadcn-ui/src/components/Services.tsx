@@ -20,7 +20,11 @@ import {
   Coffee,
   Trophy,
   Briefcase,
-  MapPin
+  MapPin,
+  PanelsTopLeft, 
+  Type, 
+  Lightbulb, 
+  PictureInPicture 
 } from 'lucide-react';
 
 const Services = () => {
@@ -142,7 +146,7 @@ const Services = () => {
     {
       title: "Signage Board",
       description: "High-quality signage boards for shops, offices, and events",
-      icon: MapPin,
+      icon: PanelsTopLeft, // signage board / panels icon
       gradient: "from-red-500 via-orange-500 to-yellow-500",
       bgGradient: "from-red-50 to-orange-50",
       features: ["Weatherproof", "Custom Sizes", "Durable Material"]
@@ -150,7 +154,7 @@ const Services = () => {
     {
       title: "Acrylics & LED Letters",
       description: "Premium acrylic and LED glow letters for your brand visibility",
-      icon: Sparkles,
+      icon: Type, // letter / typography icon
       gradient: "from-purple-500 via-pink-500 to-red-500",
       bgGradient: "from-purple-50 to-pink-50",
       features: ["3D Acrylic", "LED Backlit", "Custom Fonts"]
@@ -158,7 +162,7 @@ const Services = () => {
     {
       title: "Glow Shine Board",
       description: "Attractive glow boards to make your business stand out day & night",
-      icon: Zap,
+      icon: Lightbulb, // glowing light effect
       gradient: "from-yellow-400 via-orange-500 to-red-500",
       bgGradient: "from-yellow-50 to-orange-50",
       features: ["Energy Efficient", "Bright LED Lights", "Long-lasting"]
@@ -166,12 +170,11 @@ const Services = () => {
     {
       title: "Canvas & Retro",
       description: "Stylish canvas prints and retro-themed boards for decor and branding",
-      icon: Image,
+      icon: PictureInPicture, // canvas/photo frame style
       gradient: "from-teal-500 via-green-500 to-emerald-500",
       bgGradient: "from-teal-50 to-green-50",
       features: ["High Resolution", "Retro Themes", "Custom Designs"]
     }
-
   ];
 
   const handleBookService = (serviceName: string) => {
