@@ -31,25 +31,14 @@ const Services = () => {
       title: "Business Cards",
       description: "Professional business cards with premium finishes and modern designs",
       icon: CreditCard,
-      price: "Starting ₹299",
       gradient: "from-pink-500 via-red-500 to-yellow-500",
       bgGradient: "from-pink-50 to-red-50",
       features: ["Premium Paper", "Multiple Finishes", "Quick Delivery"]
     },
     {
-      title: "Wedding Cards",
-      description: "Beautiful wedding invitations that make your special day memorable",
-      icon: Heart,
-      price: "Starting ₹499",
-      gradient: "from-purple-500 via-pink-500 to-red-500",
-      bgGradient: "from-purple-50 to-pink-50",
-      features: ["Custom Design", "Luxury Paper", "Elegant Finishes"]
-    },
-    {
       title: "Brochures & Flyers",
       description: "Eye-catching marketing materials to promote your business effectively",
       icon: FileText,
-      price: "Starting ₹199",
       gradient: "from-blue-500 via-cyan-500 to-teal-500",
       bgGradient: "from-blue-50 to-cyan-50",
       features: ["Full Color", "Various Sizes", "Bulk Discounts"]
@@ -58,16 +47,14 @@ const Services = () => {
       title: "Digital Printing",
       description: "High-quality digital prints for all your personal and business needs",
       icon: Printer,
-      price: "Starting ₹99",
       gradient: "from-green-500 via-emerald-500 to-teal-500",
       bgGradient: "from-green-50 to-emerald-50",
       features: ["HD Quality", "Fast Turnaround", "Any Quantity"]
     },
     {
-      title: "Large Format Printing",
+      title: "Flex Printing",
       description: "Banners, posters, and signage for maximum visual impact",
       icon: Image,
-      price: "Starting ₹799",
       gradient: "from-orange-500 via-amber-500 to-yellow-500",
       bgGradient: "from-orange-50 to-amber-50",
       features: ["Weather Resistant", "HD Graphics", "Custom Sizes"]
@@ -76,7 +63,6 @@ const Services = () => {
       title: "Event Materials",
       description: "Complete printing solutions for conferences, weddings, and events",
       icon: Calendar,
-      price: "Starting ₹599",
       gradient: "from-indigo-500 via-purple-500 to-pink-500",
       bgGradient: "from-indigo-50 to-purple-50",
       features: ["Event Packages", "Bulk Orders", "Same Day Service"]
@@ -85,7 +71,6 @@ const Services = () => {
       title: "Custom Stickers",
       description: "Vibrant stickers and labels for branding, decoration, and packaging",
       icon: Star,
-      price: "Starting ₹149",
       gradient: "from-yellow-500 via-orange-500 to-red-500",
       bgGradient: "from-yellow-50 to-orange-50",
       features: ["Waterproof", "Die Cut", "Custom Shapes"]
@@ -94,7 +79,6 @@ const Services = () => {
       title: "Gift Packaging",
       description: "Beautiful gift boxes, bags, and wrapping solutions for special occasions",
       icon: Gift,
-      price: "Starting ₹99",
       gradient: "from-rose-500 via-pink-500 to-purple-500",
       bgGradient: "from-rose-50 to-pink-50",
       features: ["Luxury Finish", "Custom Sizes", "Ribbon & Bow"]
@@ -103,7 +87,6 @@ const Services = () => {
       title: "Logo Design",
       description: "Professional logo design and branding services for your business",
       icon: Palette,
-      price: "Starting ₹999",
       gradient: "from-violet-500 via-purple-500 to-indigo-500",
       bgGradient: "from-violet-50 to-purple-50",
       features: ["Multiple Concepts", "Unlimited Revisions", "Vector Files"]
@@ -112,7 +95,6 @@ const Services = () => {
       title: "Photo Printing",
       description: "High-quality photo prints for memories, portfolios, and displays",
       icon: Camera,
-      price: "Starting ₹49",
       gradient: "from-teal-500 via-cyan-500 to-blue-500",
       bgGradient: "from-teal-50 to-cyan-50",
       features: ["Premium Paper", "Color Correction", "Multiple Sizes"]
@@ -121,7 +103,6 @@ const Services = () => {
       title: "Catalogs & Magazines",
       description: "Professional catalogs, magazines, and booklets for your business",
       icon: Book,
-      price: "Starting ₹399",
       gradient: "from-emerald-500 via-green-500 to-lime-500",
       bgGradient: "from-emerald-50 to-green-50",
       features: ["Perfect Binding", "Glossy Finish", "Bulk Printing"]
@@ -130,7 +111,6 @@ const Services = () => {
       title: "T-Shirt Printing",
       description: "Custom t-shirt printing for events, teams, and promotional campaigns",
       icon: Shirt,
-      price: "Starting ₹299",
       gradient: "from-amber-500 via-yellow-500 to-lime-500",
       bgGradient: "from-amber-50 to-yellow-50",
       features: ["DTG Printing", "Screen Print", "Vinyl Transfer"]
@@ -139,7 +119,6 @@ const Services = () => {
       title: "Mugs & Gifts",
       description: "Personalized mugs, keychains, and promotional gifts for any occasion",
       icon: Coffee,
-      price: "Starting ₹199",
       gradient: "from-red-500 via-pink-500 to-rose-500",
       bgGradient: "from-red-50 to-pink-50",
       features: ["Sublimation Print", "Laser Engraving", "Custom Design"]
@@ -148,7 +127,6 @@ const Services = () => {
       title: "Certificates & Awards",
       description: "Professional certificates, awards, and recognition materials",
       icon: Trophy,
-      price: "Starting ₹249",
       gradient: "from-blue-600 via-indigo-500 to-purple-500",
       bgGradient: "from-blue-50 to-indigo-50",
       features: ["Gold Foiling", "Embossing", "Premium Frame"]
@@ -157,7 +135,6 @@ const Services = () => {
       title: "Corporate Identity",
       description: "Complete corporate branding packages including letterheads and envelopes",
       icon: Briefcase,
-      price: "Starting ₹799",
       gradient: "from-gray-600 via-slate-500 to-zinc-500",
       bgGradient: "from-gray-50 to-slate-50",
       features: ["Complete Package", "Brand Guidelines", "Stationery Set"]
@@ -166,7 +143,6 @@ const Services = () => {
       title: "Vehicle Graphics",
       description: "Eye-catching vehicle wraps, decals, and advertising graphics",
       icon: MapPin,
-      price: "Starting ₹1999",
       gradient: "from-orange-600 via-red-500 to-pink-500",
       bgGradient: "from-orange-50 to-red-50",
       features: ["Full Wrap", "Partial Graphics", "Reflective Material"]
