@@ -1,10 +1,24 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, MessageCircle, Sparkles, Zap, Award, Star } from 'lucide-react';
+import { Phone, MessageCircle, Sparkles, Zap, Award, Star, MapPin } from 'lucide-react';
 
 const Hero = () => {
   const [currentFeature, setCurrentFeature] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
+  const [selectedOffice, setSelectedOffice] = useState(0);
+
+  const offices = [
+    {
+      name: "Rohtak Office",
+      phone: "9802919872",
+      whatsapp: "9802919872",
+    },
+    {
+      name: "Gurgaon Office",
+      phone: "9138119872",
+      whatsapp: "9138119872",
+    },
+  ];
 
   const features = [
     { icon: Award, text: "Premium Quality Printing", color: "text-blue-500" },
@@ -23,12 +37,12 @@ const Hero = () => {
 
   const handleGetQuote = () => {
     const message = "Hi! I'm interested in getting a printing quote. Please provide me with details about your services and pricing.";
-    const whatsappUrl = `https://wa.me/919896615867?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/91${offices[selectedOffice].whatsapp}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
   const handleCall = () => {
-    window.open('tel:+919896615867', '_self');
+    window.open(`tel:+91${offices[selectedOffice].phone}`, '_self');
   };
 
   return (
@@ -93,11 +107,35 @@ const Hero = () => {
           </div>
 
           {/* Enhanced Description */}
-          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-12 leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed">
             Transform your ideas into stunning prints with our 
             <span className="text-blue-600 font-semibold"> professional digital and offset printing services</span> in Rohtak, Haryana. 
             <span className="text-orange-600 font-semibold"> Quality prints, competitive prices, and lightning-fast delivery</span> for all your printing needs.
           </p>
+
+          {/* Office Selection */}
+          <div className="mb-8">
+            <p className="text-lg text-gray-600 mb-4">Choose your preferred office:</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              {offices.map((office, index) => (
+                <button
+                  key={index}
+                  onClick={() => setSelectedOffice(index)}
+                  className={`flex items-center gap-3 px-6 py-3 rounded-xl border-2 transition-all duration-300 ${
+                    selectedOffice === index
+                      ? 'border-blue-500 bg-blue-50 text-blue-700 shadow-lg scale-105'
+                      : 'border-gray-300 bg-white text-gray-600 hover:border-blue-300 hover:bg-blue-50'
+                  }`}
+                >
+                  <MapPin className="w-5 h-5" />
+                  <div className="text-left">
+                    <div className="font-semibold">{office.name}</div>
+                    <div className="text-sm opacity-75">+91 {office.phone}</div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
 
           {/* Enhanced CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
