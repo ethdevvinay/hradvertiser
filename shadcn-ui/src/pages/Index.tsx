@@ -262,7 +262,6 @@ export default function Index() {
                       >
                         EthicsComputer
                       </span>
-                      <span className="text-xl ml-2">✨</span>
                     </p>
                   </div>
                 </div>
