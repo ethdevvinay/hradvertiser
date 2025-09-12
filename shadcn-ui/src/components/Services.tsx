@@ -120,7 +120,7 @@ const Services = () => {
       features: ["Sublimation Print", "Laser Engraving", "Custom Design"]
     },
     {
-      title: "Certificates & Awards",
+      title: "Certificates",
       description: "Professional certificates, awards, and recognition materials",
       icon: Trophy,
       gradient: "from-blue-600 via-indigo-500 to-purple-500",
