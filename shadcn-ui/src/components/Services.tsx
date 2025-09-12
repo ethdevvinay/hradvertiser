@@ -76,14 +76,6 @@ const Services = () => {
       features: ["Waterproof", "Die Cut", "Custom Shapes"]
     },
     {
-      title: "Gift Packaging",
-      description: "Beautiful gift boxes, bags, and wrapping solutions for special occasions",
-      icon: Gift,
-      gradient: "from-rose-500 via-pink-500 to-purple-500",
-      bgGradient: "from-rose-50 to-pink-50",
-      features: ["Luxury Finish", "Custom Sizes", "Ribbon & Bow"]
-    },
-    {
       title: "Logo Design",
       description: "Professional logo design and branding services for your business",
       icon: Palette,
