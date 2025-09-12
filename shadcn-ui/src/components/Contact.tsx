@@ -5,6 +5,46 @@ import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Star, Sparkles } from 'lucide-react';
 
+// Inline CSS animations
+const animationStyles = `
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+  
+  .animate-float { animation: float 6s ease-in-out infinite; }
+  .animate-fade-in { animation: fade-in 1s ease-out; }
+  .animate-fade-in-up { animation: fade-in-up 1s ease-out; }
+  .animate-shake { animation: shake 0.5s ease-in-out; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-2000 { animation-delay: 2000ms; }
+  .animation-delay-4000 { animation-delay: 4000ms; }
+  
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+`;
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -71,7 +111,11 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="relative py-20 overflow-hidden bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50">
+    <>
+      {/* Inject CSS animations */}
+      <style dangerouslySetInnerHTML={{ __html: animationStyles }} />
+      
+      <section id="contact" className="relative py-20 overflow-hidden bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -430,6 +474,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
