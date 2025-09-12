@@ -1,14 +1,27 @@
 import { Phone, MessageCircle } from 'lucide-react';
 
 const CTABanner = () => {
-  const handleWhatsApp = () => {
+  const offices = [
+    {
+      name: "Rohtak Office",
+      phone: "9802919872",
+      whatsapp: "9802919872",
+    },
+    {
+      name: "Gurgaon Office",
+      phone: "9138119872",
+      whatsapp: "9138119872",
+    },
+  ];
+
+  const handleWhatsApp = (number: string) => {
     const message = "Hi! I want to get a custom printing quote. Please provide me with details about your services and pricing.";
-    const whatsappUrl = `https://wa.me/919896615867?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    const whatsappUrl = `https://wa.me/91${number}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
   };
 
-  const handleCall = () => {
-    window.open('tel:+919896615867', '_self');
+  const handleCall = (number: string) => {
+    window.open(`tel:+91${number}`, "_self");
   };
 
   return (
@@ -29,22 +42,26 @@ const CTABanner = () => {
             Quality printing services with fast delivery guaranteed.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button 
-              onClick={handleWhatsApp}
-              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg flex items-center gap-3 transition-all duration-300 hover:scale-105 shadow-lg"
-            >
-              <MessageCircle className="w-6 h-6" />
-              Request Quote via WhatsApp
-            </button>
-            
-            <button 
-              onClick={handleCall}
-              className="bg-white hover:bg-gray-100 text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg flex items-center gap-3 transition-all duration-300 hover:scale-105 shadow-lg"
-            >
-              <Phone className="w-6 h-6" />
-              Call Now: +91-9896615867
-            </button>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center">
+            {offices.map((office, index) => (
+              <div key={index} className="flex flex-col gap-3">
+                <button
+                  onClick={() => handleWhatsApp(office.whatsapp)}
+                  className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp {office.name}
+                </button>
+
+                <button
+                  onClick={() => handleCall(office.phone)}
+                  className="bg-white hover:bg-gray-100 text-blue-700 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-all duration-300 hover:scale-105 shadow-lg"
+                >
+                  <Phone className="w-5 h-5" />
+                  Call {office.name}: +91-{office.phone}
+                </button>
+              </div>
+            ))}
           </div>
 
           <div className="mt-8 flex flex-wrap justify-center gap-8 text-blue-100">
