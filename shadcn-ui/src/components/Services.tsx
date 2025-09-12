@@ -138,7 +138,40 @@ const Services = () => {
       gradient: "from-orange-600 via-red-500 to-pink-500",
       bgGradient: "from-orange-50 to-red-50",
       features: ["Full Wrap", "Partial Graphics", "Reflective Material"]
+    },
+    {
+      title: "Signage Board",
+      description: "High-quality signage boards for shops, offices, and events",
+      icon: MapPin,
+      gradient: "from-red-500 via-orange-500 to-yellow-500",
+      bgGradient: "from-red-50 to-orange-50",
+      features: ["Weatherproof", "Custom Sizes", "Durable Material"]
+    },
+    {
+      title: "Acrylics & LED Letters",
+      description: "Premium acrylic and LED glow letters for your brand visibility",
+      icon: Sparkles,
+      gradient: "from-purple-500 via-pink-500 to-red-500",
+      bgGradient: "from-purple-50 to-pink-50",
+      features: ["3D Acrylic", "LED Backlit", "Custom Fonts"]
+    },
+    {
+      title: "Glow Shine Board",
+      description: "Attractive glow boards to make your business stand out day & night",
+      icon: Zap,
+      gradient: "from-yellow-400 via-orange-500 to-red-500",
+      bgGradient: "from-yellow-50 to-orange-50",
+      features: ["Energy Efficient", "Bright LED Lights", "Long-lasting"]
+    },
+    {
+      title: "Canvas & Retro",
+      description: "Stylish canvas prints and retro-themed boards for decor and branding",
+      icon: Image,
+      gradient: "from-teal-500 via-green-500 to-emerald-500",
+      bgGradient: "from-teal-50 to-green-50",
+      features: ["High Resolution", "Retro Themes", "Custom Designs"]
     }
+
   ];
 
   const handleBookService = (serviceName: string) => {
