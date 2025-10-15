@@ -5,7 +5,6 @@ import WhyChooseUs from '@/components/WhyChooseUs';
 import Services from '@/components/Services';
 import HowItWorks from '@/components/HowItWorks';
 import Gallery from '@/components/Gallery';
-import Testimonials from '@/components/Testimonials';
 import LocationMap from '@/components/LocationMap';
 import CTABanner from '@/components/CTABanner';
 import Contact from '@/components/Contact';
@@ -22,7 +21,6 @@ export default function Index() {
       <Services />
       <HowItWorks />
       <Gallery />
-      <Testimonials />
       <LocationMap />
       <CTABanner />
       <Contact />
@@ -87,7 +85,7 @@ export default function Index() {
                     {/* Enhanced Social Buttons */}
                     <div className="flex space-x-4">
                       <button 
-                        onClick={() => window.open('https://wa.me/919896615867', '_blank')}
+                        onClick={() => window.open('https://wa.me/919138119872', '_blank')}
                         className="group relative w-16 h-16 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 hover:from-green-400 hover:via-emerald-400 hover:to-green-500 rounded-2xl flex items-center justify-center transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-green-500/50 transform hover:scale-125 hover:rotate-12"
                         aria-label="WhatsApp"
                       >
@@ -96,7 +94,7 @@ export default function Index() {
                       </button>
                       
                       <button 
-                        onClick={() => window.open('tel:+919896615867', '_self')}
+                        onClick={() => window.open('tel:+919138119872', '_self')}
                         className="group relative w-16 h-16 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 hover:from-blue-400 hover:via-cyan-400 hover:to-blue-500 rounded-2xl flex items-center justify-center transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-blue-500/50 transform hover:scale-125 hover:-rotate-12"
                         aria-label="Phone"
                       >
@@ -159,12 +157,12 @@ export default function Index() {
                     </h5>
                     <div className="space-y-3">
                       <div className="group flex items-center gap-3 p-2 rounded-xl hover:bg-gradient-to-r hover:from-slate-700/30 hover:to-purple-700/30 transition-all duration-300 transform hover:scale-105 cursor-pointer"
-                          onClick={() => window.open('tel:+919802919872')}>
+                          onClick={() => window.open('tel:+919138119872')}>
                         <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                           <span className="text-lg group-hover:animate-pulse">📞</span>
                         </div>
                         <div>
-                          <span className="text-gray-200 group-hover:text-white font-medium">+91-9802919872</span>
+                          <span className="text-gray-200 group-hover:text-white font-medium">+91-9138119872</span>
                           <div className="text-sm text-emerald-400">✨ Call Now</div>
                         </div>
                       </div>
@@ -201,12 +199,12 @@ export default function Index() {
                     </h5>
                     <div className="space-y-3">
                       <div className="group flex items-center gap-3 p-2 rounded-xl hover:bg-gradient-to-r hover:from-slate-700/30 hover:to-purple-700/30 transition-all duration-300 transform hover:scale-105 cursor-pointer"
-                          onClick={() => window.open('tel:+919138119872')}>
+                          onClick={() => window.open('tel:+919802919872')}>
                         <div className="w-10 h-10 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                           <span className="text-lg group-hover:animate-pulse">📞</span>
                         </div>
                         <div>
-                          <span className="text-gray-200 group-hover:text-white font-medium">+91-9138119872</span>
+                          <span className="text-gray-200 group-hover:text-white font-medium">+91-9802919872</span>
                           <div className="text-sm text-emerald-400">✨ Call Now</div>
                         </div>
                       </div>
