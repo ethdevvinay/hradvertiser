@@ -8,56 +8,56 @@ const Gallery = () => {
       id: 1,
       title: "Business Cards",
       category: "Corporate",
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop",
+      image: "https://cms.cloudinary.vpsvc.com/image/upload/c_scale,dpr_auto,f_auto,q_auto:good,w_700/India%20LOB/visiting-cards/glossy-visiting-cards/IN_Glossy-Visiting-Cards_Overview",
       description: "Premium business cards with various finishes"
     },
     {
       id: 2,
       title: "Wedding Invitations",
       category: "Personal",
-      image: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=400&h=300&fit=crop",
+      image: "https://swastikweddingcards.com/wp-content/uploads/SCROLL/black-satin-768x1024.jpg.webp",
       description: "Elegant wedding cards with custom designs"
     },
     {
       id: 3,
       title: "Marketing Brochures",
       category: "Marketing",
-      image: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop",
+      image: "https://cms.cloudinary.vpsvc.com/image/upload/if_ar_gt_1.1/c_scale,t_pdpHeroGallery_Gallery/if_else/c_scale,w_816/if_end/f_auto,q_auto:best,dpr_auto/india%20lob/brochures/in_brochures_001",
       description: "Professional brochures for business promotion"
     },
     {
       id: 4,
       title: "Large Format Banners",
       category: "Advertising",
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
+      image: "https://lag.azureedge.net/w2p-cms-1/sliderImages/22-11-30-BANS oversized vinyl banner billboard_500x300.jpg",
       description: "Eye-catching banners for events and promotions"
     },
     {
       id: 5,
       title: "Product Catalogs",
       category: "Corporate",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      image: "https://blog-frontend.envato.com/cdn-cgi/image/width=1280,quality=75,format=auto/uploads/sites/2/2024/01/brochures-featured.jpg",
       description: "Detailed product catalogs with premium binding"
     },
     {
       id: 6,
       title: "Custom Stickers",
       category: "Branding",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop",
+      image: "https://www.stickitup.xyz/cdn/shop/files/HOME-PAGE-BANNER-IMAGE.png?v=1707407022&width=750",
       description: "Custom stickers for branding and decoration"
     },
     {
       id: 7,
       title: "Packaging Design",
       category: "Packaging",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      image: "https://cdn-ikpginp.nitrocdn.com/PRntyBdDPhmusWKVDuNFHSODyQxBrsGD/assets/images/optimized/rev-31bfdad/www.deuglo.com/wp-content/uploads/2024/06/Product-Packaging-Design-Company-in-Noida-UP-Deuglo.png",
       description: "Custom packaging solutions for products"
     },
     {
       id: 8,
       title: "Event Posters",
       category: "Events",
-      image: "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=400&h=300&fit=crop",
+      image: "https://www.eventbookings.com/wp-content/uploads/2023/06/Brothers-Lounge-Bar-Poster.jpg",
       description: "Vibrant posters for events and announcements"
     }
   ];
