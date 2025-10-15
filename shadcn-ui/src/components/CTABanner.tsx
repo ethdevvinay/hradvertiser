@@ -70,16 +70,16 @@ const CTABanner = () => {
   const offices = [
     {
       name: "Rohtak Office",
-      phone: "9802919872",
-      whatsapp: "9802919872",
+      phone: "9138119872",
+      whatsapp: "9138119872",
       color: "from-emerald-500 to-teal-600",
       hoverColor: "from-emerald-600 to-teal-700",
       icon: Star,
     },
     {
       name: "Gurgaon Office", 
-      phone: "9138119872",
-      whatsapp: "9138119872",
+      phone: "9802919872",
+      whatsapp: "9802919872",
       color: "from-purple-500 to-pink-600",
       hoverColor: "from-purple-600 to-pink-700",
       icon: Zap,

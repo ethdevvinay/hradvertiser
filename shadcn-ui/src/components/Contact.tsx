@@ -347,11 +347,11 @@ const Contact = () => {
                     <Phone className="w-7 h-7 text-white animate-pulse" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-lg font-semibold text-gray-800">📞 +91-9802919872</p>
+                    <p className="text-lg font-semibold text-gray-800">📞 +91-9138119872</p>
                     <Button 
                       variant="link" 
                       className="p-0 h-auto text-green-600 hover:text-green-700 font-semibold text-base hover:scale-105 transition-transform duration-200"
-                      onClick={() => window.open('tel:+919802919872', '_self')}
+                      onClick={() => window.open('tel:+919138119872', '_self')}
                     >
                       ✨ Call Now
                     </Button>
@@ -405,11 +405,11 @@ const Contact = () => {
                     <Phone className="w-7 h-7 text-white animate-pulse" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-lg font-semibold text-gray-800">📞 +91-9138119872</p>
+                    <p className="text-lg font-semibold text-gray-800">📞 +91-9802919872</p>
                     <Button 
                       variant="link" 
                       className="p-0 h-auto text-green-600 hover:text-green-700 font-semibold text-base hover:scale-105 transition-transform duration-200"
-                      onClick={() => window.open('tel:+919138119872', '_self')}
+                      onClick={() => window.open('tel:+919802919872', '_self')}
                     >
                       ✨ Call Now
                     </Button>

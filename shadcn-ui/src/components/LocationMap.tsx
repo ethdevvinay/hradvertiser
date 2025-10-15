@@ -25,7 +25,7 @@ const LocationMap = () => {
         lat: 28.8955,
         lng: 76.6066
       },
-      phone: '+91-9802919872',
+      phone: '+91-9138119872',
       email: 'hradvertiser92@gmail.com'
     },
     {
@@ -36,7 +36,7 @@ const LocationMap = () => {
         lat: 28.4595,
         lng: 77.0266
       },
-      phone: '+91-9138119872',
+      phone: '+91-9802919872',
       email: 'hradvertiserggn@gmail.com'
     }
   ];

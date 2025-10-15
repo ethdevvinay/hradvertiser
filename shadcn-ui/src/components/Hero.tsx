@@ -10,13 +10,13 @@ const Hero = () => {
   const offices = [
     {
       name: "Rohtak Office",
-      phone: "9802919872",
-      whatsapp: "9802919872",
+      phone: "9138119872",
+      whatsapp: "9138119872",
     },
     {
       name: "Gurgaon Office",
-      phone: "9138119872",
-      whatsapp: "9138119872",
+      phone: "9802919872",
+      whatsapp: "9802919872",
     },
   ];
 
